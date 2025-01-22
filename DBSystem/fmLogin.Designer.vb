@@ -50,6 +50,7 @@ Partial Class fmLogin
         '
         'txtID
         '
+        Me.txtID.ImeMode = System.Windows.Forms.ImeMode.Disable
         Me.txtID.Location = New System.Drawing.Point(92, 42)
         Me.txtID.Name = "txtID"
         Me.txtID.Size = New System.Drawing.Size(100, 19)
@@ -57,6 +58,7 @@ Partial Class fmLogin
         '
         'txtPW
         '
+        Me.txtPW.ImeMode = System.Windows.Forms.ImeMode.Disable
         Me.txtPW.Location = New System.Drawing.Point(92, 99)
         Me.txtPW.Name = "txtPW"
         Me.txtPW.Size = New System.Drawing.Size(100, 19)
@@ -85,6 +87,7 @@ Partial Class fmLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(319, 164)
+        Me.ControlBox = False
         Me.Controls.Add(Me.btnQuit)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.txtPW)

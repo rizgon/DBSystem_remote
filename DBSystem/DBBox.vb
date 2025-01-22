@@ -1,6 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Public Class DBBox
-    Private _ConnectionString As String
+    Private _ConnectionString As String = "SMS01ConnectionString"
+
     Sub New(ByVal ConnectionString As String)
         'コンストラクタで接続文字列を取得する。
         'このクラスが呼ばれたときに接続文字列は取得済み
@@ -26,6 +27,16 @@ Public Class DBBox
         End Try
     End Function
 
+    Public Overloads Function GetDataFromDB(ByVal ds As DataSet, ByVal strDataTable As String, ByVal strSQL As String)
+        'DBからデータを取得してデータセットに格納する
+        Dim da As New SqlDataAdapter(strSQL, _ConnectionString)
+        Try
+            da.Fill(ds, strDataTable)
+            Return True
+        Catch ex As Exception
+            Return False
+        End Try
+    End Function
 End Class
 
 
@@ -36,6 +47,7 @@ End Class
 '　　　このクラスがNewされたときに接続文字列を取得する
 '■GetDataFormDB
 '       クエリと接続文字列を使ってDataTableに結果を格納、戻り値とする
+'       DB→データセット格納もできる。
 
 
 
