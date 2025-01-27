@@ -24,7 +24,7 @@ Partial Class fmOption
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnCustomerMaster = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -58,15 +58,15 @@ Partial Class fmOption
         Me.Button2.Text = "月次処理"
         Me.Button2.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnCustomerMaster
         '
-        Me.Button3.BackColor = System.Drawing.SystemColors.ActiveBorder
-        Me.Button3.Location = New System.Drawing.Point(144, 330)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(188, 143)
-        Me.Button3.TabIndex = 1
-        Me.Button3.Text = "顧客マスタ"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnCustomerMaster.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.btnCustomerMaster.Location = New System.Drawing.Point(144, 330)
+        Me.btnCustomerMaster.Name = "btnCustomerMaster"
+        Me.btnCustomerMaster.Size = New System.Drawing.Size(188, 143)
+        Me.btnCustomerMaster.TabIndex = 1
+        Me.btnCustomerMaster.Text = "顧客マスタ"
+        Me.btnCustomerMaster.UseVisualStyleBackColor = False
         '
         'Button4
         '
@@ -114,7 +114,7 @@ Partial Class fmOption
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(984, 561)
         Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.btnCustomerMaster)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Name = "fmOption"
@@ -122,7 +122,7 @@ Partial Class fmOption
         Me.Controls.SetChildIndex(Me.Panel1, 0)
         Me.Controls.SetChildIndex(Me.Button1, 0)
         Me.Controls.SetChildIndex(Me.Button2, 0)
-        Me.Controls.SetChildIndex(Me.Button3, 0)
+        Me.Controls.SetChildIndex(Me.btnCustomerMaster, 0)
         Me.Controls.SetChildIndex(Me.Button4, 0)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
@@ -133,7 +133,7 @@ Partial Class fmOption
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnCustomerMaster As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Label2 As Label

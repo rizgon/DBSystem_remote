@@ -161,6 +161,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="fmCustomerMaster.resx">
+      <DependentUpon>fmCustomerMaster.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fmLogin.resx">
       <DependentUpon>fmLogin.vb</DependentUpon>
     </EmbeddedResource>

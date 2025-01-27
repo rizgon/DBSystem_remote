@@ -37,6 +37,22 @@ Public Class DBBox
             Return False
         End Try
     End Function
+
+    Public Function UpdateData(ByVal strSQL As String) As Boolean
+        Using cn As New SqlConnection(_ConnectionString)
+            Using cmd As New SqlCommand(strSQL, cn)
+                Try
+                    cn.Open()
+                    cmd.ExecuteNonQuery()
+                    Return True
+                Catch ex As Exception
+                    Return False
+                End Try
+            End Using
+        End Using
+    End Function
+
+
 End Class
 
 

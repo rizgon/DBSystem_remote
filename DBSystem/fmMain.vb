@@ -1,7 +1,6 @@
 ﻿Public Class fmMain
-    Private ConnectionString As String = "Data Source=MPC107\SQLEXPRESS01;Initial Catalog=SMS01;Integrated Security=True;"
     Private _ds As DataSet
-    Private db As New DBBox(ConnectionString)
+    Private db As New DBBox(My.Settings.ConnectionString)
 
     Public Sub New(ByVal ds As DataSet)
 

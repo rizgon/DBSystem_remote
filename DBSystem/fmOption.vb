@@ -25,4 +25,10 @@
     Private Sub fmOption_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
         _fm.Show()
     End Sub
+
+    Private Sub btnCustomerMaster_Click(sender As Object, e As EventArgs) Handles btnCustomerMaster.Click
+        Dim fm As New fmCustomerMaster(_ds, Me)
+        fm.Show()
+        Me.Hide()
+    End Sub
 End Class
