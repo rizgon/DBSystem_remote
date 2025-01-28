@@ -55,6 +55,7 @@ Partial Class fmLogin
         Me.txtID.Name = "txtID"
         Me.txtID.Size = New System.Drawing.Size(100, 19)
         Me.txtID.TabIndex = 2
+        Me.txtID.Text = "Login0001"
         '
         'txtPW
         '
@@ -63,6 +64,7 @@ Partial Class fmLogin
         Me.txtPW.Name = "txtPW"
         Me.txtPW.Size = New System.Drawing.Size(100, 19)
         Me.txtPW.TabIndex = 3
+        Me.txtPW.Text = "1234"
         '
         'btnLogin
         '

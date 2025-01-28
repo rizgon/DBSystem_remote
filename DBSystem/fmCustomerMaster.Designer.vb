@@ -125,23 +125,26 @@ Partial Class fmCustomerMaster
         Me.txtTEL.Location = New System.Drawing.Point(389, 116)
         Me.txtTEL.Name = "txtTEL"
         Me.txtTEL.Size = New System.Drawing.Size(170, 19)
-        Me.txtTEL.TabIndex = 4
+        Me.txtTEL.TabIndex = 5
+        Me.txtTEL.Tag = "y"
+        Me.txtTEL.Text = "1234567890"
         '
         'btnCancel
         '
         Me.btnCancel.Location = New System.Drawing.Point(857, 110)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(99, 25)
-        Me.btnCancel.TabIndex = 3
+        Me.btnCancel.TabIndex = 8
         Me.btnCancel.Text = "キャンセル"
         Me.btnCancel.UseVisualStyleBackColor = True
+        Me.btnCancel.UseWaitCursor = True
         '
         'btnExe
         '
         Me.btnExe.Location = New System.Drawing.Point(857, 22)
         Me.btnExe.Name = "btnExe"
         Me.btnExe.Size = New System.Drawing.Size(99, 68)
-        Me.btnExe.TabIndex = 2
+        Me.btnExe.TabIndex = 7
         Me.btnExe.Text = "新規登録"
         Me.btnExe.UseVisualStyleBackColor = True
         '
@@ -150,28 +153,36 @@ Partial Class fmCustomerMaster
         Me.txtFax.Location = New System.Drawing.Point(635, 116)
         Me.txtFax.Name = "txtFax"
         Me.txtFax.Size = New System.Drawing.Size(170, 19)
-        Me.txtFax.TabIndex = 1
+        Me.txtFax.TabIndex = 6
+        Me.txtFax.Tag = "y"
+        Me.txtFax.Text = "2345678901"
         '
         'txtAddress
         '
         Me.txtAddress.Location = New System.Drawing.Point(389, 75)
         Me.txtAddress.Name = "txtAddress"
         Me.txtAddress.Size = New System.Drawing.Size(446, 19)
-        Me.txtAddress.TabIndex = 1
+        Me.txtAddress.TabIndex = 4
+        Me.txtAddress.Tag = "y"
+        Me.txtAddress.Text = "東京都大田区1-2-3"
         '
         'txtPost
         '
         Me.txtPost.Location = New System.Drawing.Point(389, 30)
         Me.txtPost.Name = "txtPost"
         Me.txtPost.Size = New System.Drawing.Size(111, 19)
-        Me.txtPost.TabIndex = 1
+        Me.txtPost.TabIndex = 3
+        Me.txtPost.Tag = "y"
+        Me.txtPost.Text = "1112222"
         '
         'txtFurigana
         '
         Me.txtFurigana.Location = New System.Drawing.Point(87, 75)
         Me.txtFurigana.Name = "txtFurigana"
         Me.txtFurigana.Size = New System.Drawing.Size(232, 19)
-        Me.txtFurigana.TabIndex = 1
+        Me.txtFurigana.TabIndex = 2
+        Me.txtFurigana.Tag = "y"
+        Me.txtFurigana.Text = "カキクケコペットショップ"
         '
         'Label7
         '
@@ -189,6 +200,8 @@ Partial Class fmCustomerMaster
         Me.txtCustomerName.Name = "txtCustomerName"
         Me.txtCustomerName.Size = New System.Drawing.Size(232, 19)
         Me.txtCustomerName.TabIndex = 1
+        Me.txtCustomerName.Tag = "y"
+        Me.txtCustomerName.Text = "かきくけこペットショップ"
         '
         'Label6
         '

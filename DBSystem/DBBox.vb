@@ -41,11 +41,17 @@ Public Class DBBox
     Public Function UpdateData(ByVal strSQL As String) As Boolean
         Using cn As New SqlConnection(_ConnectionString)
             Using cmd As New SqlCommand(strSQL, cn)
+                Debug.WriteLine("Query-------------------------")
+                Debug.WriteLine(strSQL)
+                Debug.WriteLine("------------------------------")
                 Try
                     cn.Open()
                     cmd.ExecuteNonQuery()
                     Return True
                 Catch ex As Exception
+                    Debug.WriteLine("ERROR UPdateData -------------------------")
+                    Debug.WriteLine(ex.Message.ToString())
+                    Debug.WriteLine("------------------------------------------")
                     Return False
                 End Try
             End Using
